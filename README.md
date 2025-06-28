@@ -14,15 +14,14 @@ CREATE TABLE Employees (
 ```
 
 ### Common aggregate functions:
-<code>
-COUNT() – counts rows
+
+<code> COUNT() – counts rows
 
 SUM() – totals numeric values
 
 AVG() – average
 
-MIN() / MAX() – lowest / highest
-</code>
+MIN() / MAX() – lowest / highest </code>
 
 Examples ->
 
@@ -31,13 +30,16 @@ Examples ->
 
 SELECT COUNT(*) AS TotalEmployees FROM Employees;
 
+
 -- Total salary paid
 
 SELECT SUM(Salary) AS TotalSalary FROM Employees;
 
+
 -- Average salary
 
 SELECT AVG(Salary) AS AverageSalary FROM Employees;
+
 
 -- Minimum and maximum salary
 
@@ -53,6 +55,7 @@ Use GROUP BY to get summaries per category, e.g., department-wise:
 SELECT Department, COUNT(*) AS NumEmployees
 FROM Employees
 GROUP BY Department;
+
 
 -- Average salary in each department
 
@@ -71,6 +74,7 @@ SELECT Department, COUNT(*) AS NumEmployees
 FROM Employees
 GROUP BY Department
 HAVING COUNT(*) > 2;
+
 
 -- Departments with average salary above 70,000
 
