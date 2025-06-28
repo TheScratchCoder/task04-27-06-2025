@@ -15,13 +15,13 @@ CREATE TABLE Employees (
 
 ### Common aggregate functions:
 
-<code> COUNT() – counts rows
+<code> COUNT() – counts rows </code>
 
-SUM() – totals numeric values
+<code> SUM() – totals numeric values </code>
 
-AVG() – average
+<code> AVG() – average </code>
 
-MIN() / MAX() – lowest / highest </code>
+<code> MIN() / MAX() – lowest / highest </code>
 
 Examples ->
 
